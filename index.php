@@ -53,11 +53,14 @@
             color: #d35400; /* Acento naranja al pasar el mouse */
         }
 
-        /* Sección Hero / Portada */
+        /* Sección Hero / Portada con Imagen */
         .hero {
             text-align: center;
-            padding: 80px 20px;
-            background-color: #efdacb; /* Un tono naranja tostado más profundo para la portada */
+            padding: 100px 20px;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('portada.jpg'); /* Fondo con un filtro oscuro sutil y tu imagen */
+            background-size: cover;
+            background-position: top; /* Mantiene el foco superior igual que en el login */
+            color: #ffffff; /* Texto en blanco para que resalte sobre la foto */
             border-bottom: 1px solid #e0c8b9;
         }
 
@@ -67,12 +70,14 @@
             text-transform: uppercase;
             letter-spacing: 3px;
             margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
 
         .hero p {
-            color: #444;
+            color: #f7ece4;
             font-size: 1.1rem;
             margin-bottom: 30px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
         }
 
         .btn-cta {
@@ -189,14 +194,14 @@
     <header>
         <div class="logo">Nova Void</div>
         <nav>
-            <a href="#">Inicio</a>
+            <a href="index.php">Inicio</a>
             <a href="#">Catálogo</a>
+            <a href="loguin.php">Iniciar Sesión</a>
             <a href="registro.php">Registrarse</a>
-            <a href="#">Contacto</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section con la imagen de fondo -->
     <section class="hero">
         <h1>Colección Esencial</h1>
         <p>Diseño, minimalismo y estructura urbana con personalidad cálida.</p>
